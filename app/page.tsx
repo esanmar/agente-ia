@@ -358,7 +358,10 @@ const Page = () => {
             <StepItem status={resolveStepStatus(4)}>
               <StepNumber order={4} status={resolveStepStatus(4)} />
 
-              
+              <StepTitle></StepTitle>
+              <StepDesc>
+            
+              </StepDesc>
 
               {currentStep > 3 && (
                 <StepContent>
