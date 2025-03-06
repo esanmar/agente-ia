@@ -228,7 +228,7 @@ const Page = () => {
                 >
                   {/* search input */}
                   <input
-                    placeholder=Cuál es la capital de España?"
+                    placeholder="Cuál es la capital de España?"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     disabled={loading}
