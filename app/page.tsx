@@ -12,11 +12,10 @@ import {
   StepTitle
 } from './components/step-list';
 import { AgentInfo } from './components/agent-info';
-import { WorkflowIcon } from './icons/workflow-icon';
 import { CODES } from './constants/codes';
 import type { AgentName, StepRecord } from './types';
 import { AgentBlock } from './components/agent-block';
-import { IconBrandGithub, IconFile, IconLoader2 } from '@tabler/icons-react';
+import {  IconLoader2 } from '@tabler/icons-react';
 
 export default function HomePage() {
   return (
