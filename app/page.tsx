@@ -249,7 +249,7 @@ const Page = () => {
             <StepItem status={resolveStepStatus(2)}>
               <StepNumber order={2} status={resolveStepStatus(2)} />
 
-              <StepTitle>Ver respuestas de disintas fuentes</StepTitle>
+              <StepTitle>Ver respuestas de distintas fuentes</StepTitle>
               <StepDesc>
                 El agente de referencia cruzada organizará a los agentes trabajadores para obtener respuestas de diferentes recursos.
               </StepDesc>
