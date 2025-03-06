@@ -196,32 +196,14 @@ const Page = () => {
         {/* header */}
         <header className="bg-purple-50  text-center">
           <div className="mx-auto max-w-screen-sm px-8 py-12">
-            <h1 className="text-3xl font-bold">Cross Reference Agent</h1>
+            <h1 className="text-3xl font-bold">FreePlanTour Agent AI</h1>
 
             <div className="mt-2 text-lg opacity-60">
-              This is a simple example to demonstrate how to use
-              <WorkflowIcon size={18} className="ml-2 inline-flex" /> Upstash
-              Workflow Agents to cross-reference information from different
-              sources.
+             
             </div>
 
             <div className="flex justify-center items-center gap-6 mt-4">
-              <a
-                className="inline-flex items-center font-medium gap-0.5 underline"
-                href="https://upstash.com/docs/qstash/workflow/quickstarts/vercel-nextjs"
-                target="_blank"
-              >
-                <IconFile size={18} />
-                Docs
-              </a>
-              <a
-                className="inline-flex items-center gap-0.5 font-medium underline"
-                href="https://github.com/upstash/workflow-js/tree/main/examples/agents-researcher"
-                target="_blank"
-              >
-                <IconBrandGithub size={18} />
-                Repository
-              </a>
+            
             </div>
           </div>
         </header>
@@ -235,7 +217,7 @@ const Page = () => {
 
               <StepTitle>Ask a Question</StepTitle>
               <StepDesc>
-                Try different questions to see how different resources come into
+               Haz una pregunta
                 play.
               </StepDesc>
 
@@ -246,7 +228,7 @@ const Page = () => {
                 >
                   {/* search input */}
                   <input
-                    placeholder="What is the capital of France?"
+                    placeholder=Cuál es la capital de España?"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     disabled={loading}
@@ -269,10 +251,9 @@ const Page = () => {
             <StepItem status={resolveStepStatus(2)}>
               <StepNumber order={2} status={resolveStepStatus(2)} />
 
-              <StepTitle>View Answers From Various Resources</StepTitle>
+              <StepTitle>Ver respuestas de disintas fuentes</StepTitle>
               <StepDesc>
-                The cross-reference agent will orchestrate worker agents to get
-                answers from different resources.
+                El agente de referencia cruzada organizará a los agentes trabajadores para obtener respuestas de diferentes recursos.
               </StepDesc>
 
               {currentStep > 1 && (
@@ -357,10 +338,9 @@ const Page = () => {
             <StepItem status={resolveStepStatus(3)}>
               <StepNumber order={3} status={resolveStepStatus(3)} />
 
-              <StepTitle>See Final Summary with References</StepTitle>
+              <StepTitle>Ver el resumen final</StepTitle>
               <StepDesc>
-                The cross-reference agent will summarize the answers with
-                references.
+                Resumen de respuestas de diferentes fuentes
               </StepDesc>
 
               {currentStep > 2 && (
@@ -378,44 +358,11 @@ const Page = () => {
             <StepItem status={resolveStepStatus(4)}>
               <StepNumber order={4} status={resolveStepStatus(4)} />
 
-              <StepTitle>See Logs in Upstash Console</StepTitle>
-              <StepDesc>
-                After running the workflow, navigate to the Upstash Console to
-                see the related logs.
-              </StepDesc>
+              
 
               {currentStep > 3 && (
                 <StepContent>
-                  <a
-                    className="inline-flex items-center gap-1 h-8 px-4 rounded-md bg-purple-500 text-white hover:bg-purple-400"
-                    href="https://console.upstash.com/qstash?tab=workflow"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                      <path d="M11 13l9 -9" />
-                      <path d="M15 4h5v5" />
-                    </svg>
-                    Upstash Console
-                  </a>
-
-                  <Img
-                    className="block mt-8"
-                    src="/screenshot.png"
-                    width={1564}
-                    height={476}
-                    alt="s"
-                  />
+                 
                 </StepContent>
               )}
             </StepItem>
