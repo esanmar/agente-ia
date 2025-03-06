@@ -214,10 +214,9 @@ const Page = () => {
             <StepItem status={resolveStepStatus(1)}>
               <StepNumber order={1} status={resolveStepStatus(1)} />
 
-              <StepTitle>Ask a Question</StepTitle>
+              <StepTitle>Pregunta</StepTitle>
               <StepDesc>
-               Haz una pregunta
-                play.
+               Haz una pregunta.
               </StepDesc>
 
               <StepContent>
